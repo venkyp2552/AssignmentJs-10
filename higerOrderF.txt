@@ -1,0 +1,31 @@
+1.No, Higer order functions and call back functions are not same.
+
+Higer Order Functions:
+    The function which will return another functions as an argumets and it will retunr functions as an output.
+
+Ex:
+
+const persons = [
+  { name: 'Peter', age: 16 },
+  { name: 'Mark', age: 18 },
+  { name: 'John', age: 27 },
+  { name: 'Jane', age: 14 },
+  { name: 'Tony', age: 24},
+];
+
+const ages=persons.filter((item) => item.age>=20)
+console.log(ages);
+
+Call Back Functions:
+    The function passed as an argument into another funciton.
+    which is then invoked inside the outer function to complete some kind of routine or action.
+EX:
+
+function greet(name,MyFnName){
+  console.log('Hello' + ' ' + name)
+  MyFnName(name)
+}
+function sayHelo(name){
+  console.log('Hello wolrd Say Something to World...'+name)
+}
+greet("venky",sayHelo)

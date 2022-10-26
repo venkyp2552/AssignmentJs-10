@@ -1,0 +1,8 @@
+function greet(name,MyFnName){
+  console.log('Hello' + ' ' + name)
+  MyFnName(name)
+}
+function sayHelo(name){
+  console.log('Hello wolrd Say Something to World...'+name)
+}
+greet("venky",sayHelo)
